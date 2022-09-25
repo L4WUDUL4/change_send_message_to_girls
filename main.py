@@ -56,7 +56,7 @@ def get_week_day():
 
 # 各种正数日
 def get_memorial_days_count(aim_date):
-  if aim_date is None:
+  if aim_date is None:2022-05-20
     print('没有设置 开始日')
     return 0
   delta = today - datetime.strptime(aim_date, "%Y-%m-%d")
