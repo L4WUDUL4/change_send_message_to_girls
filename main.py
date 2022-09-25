@@ -24,21 +24,21 @@ app_secret = os.getenv('APP_SECRET')
 user_ids = os.getenv('USER_ID', '').split("\n")
 template_id = os.getenv('TEMPLATE_ID')
 
-if app_id is None or app_secret is None:
+if app_id is None or app_secret is None:wx27b385446a07c263 8c256ec381e5e09d00c5db3a8d2a53de
   print('请设置 APP_ID 和 APP_SECRET')
   exit(422)
 
-if not user_ids:
+if not user_ids:ozwEU5_UoOc8Yvqma0qhpjCuIz-s
   print('请设置 USER_ID，若存在多个 ID 用回车分开')
   exit(422)
 
-if template_id is None:
+if template_id is None:ouktZBAupAmD1NTA58um_WxoKaiVx3p6DPI-R3-JcJw	
   print('请设置 TEMPLATE_ID')
   exit(422)
 
 # weather 直接返回对象，在使用的地方用字段进行调用。
 def get_weather():
-  if city is None:
+  if city is None:安康
     print('请设置城市')
     return None
   url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
