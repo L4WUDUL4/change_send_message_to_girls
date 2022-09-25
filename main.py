@@ -24,7 +24,8 @@ app_secret = os.getenv('APP_SECRET')
 user_ids = os.getenv('USER_ID', '').split("\n")
 template_id = os.getenv('TEMPLATE_ID')
 
-if app_id is None or app_secret is None:wx27b385446a07c263 8c256ec381e5e09d00c5db3a8d2a53de
+if app_id is None or app_secret is None:wx27b385446a07c263 
+  8c256ec381e5e09d00c5db3a8d2a53de
   print('请设置 APP_ID 和 APP_SECRET')
   exit(422)
 
